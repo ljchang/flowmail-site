@@ -36,3 +36,7 @@ Contact context is one of the most powerful inputs to [AI Drafting](/docs/featur
 - A reply to a new client will strike the right balance of warmth and professionalism
 
 You don't have to think about tone-switching — FlowMail handles it automatically based on the relationship context it has built over time.
+
+## People as Context
+
+People can be used as contexts when composing emails — helping the AI generate better drafts by drawing on your relationship history. They also help FlowMail figure out who an email should be sent to. When you describe what you need ("email my manager about the deadline" or "check in with the design team"), FlowMail uses your contact graph to identify the right recipients.

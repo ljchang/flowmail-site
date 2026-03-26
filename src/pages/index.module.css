@@ -35,12 +35,24 @@
 }
 
 .heroLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: var(--fm-primary-400);
   margin-bottom: 0.75rem;
+}
+
+.betaBadge {
+  padding: 0.15rem 0.5rem;
+  font-size: 0.65rem;
+  color: var(--fm-warning);
+  border: 1px solid var(--fm-warning);
+  border-radius: 4px;
+  line-height: 1;
 }
 
 .heroTitle {
@@ -138,9 +150,9 @@
   border-radius: 50%;
 }
 
-.dotRed { background: #ef4444; }
-.dotYellow { background: #f59e0b; }
-.dotGreen { background: #22c55e; }
+.dotRed { background: var(--fm-error); }
+.dotYellow { background: var(--fm-warning); }
+.dotGreen { background: var(--fm-success); }
 
 .appLayout {
   display: flex;

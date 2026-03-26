@@ -35,7 +35,10 @@ function Hero(): ReactNode {
     <section className={styles.hero}>
       <div className={styles.heroInner}>
         <div>
-          <div className={styles.heroLabel}>AI-Powered Email</div>
+          <div className={styles.heroLabel}>
+            AI-Powered Email
+            <span className={styles.betaBadge}>Beta</span>
+          </div>
           <h1 className={styles.heroTitle}>
             Email that learns
             <br />
@@ -52,7 +55,7 @@ function Hero(): ReactNode {
             </Link>
             <Link
               className={styles.ctaSecondary}
-              href="https://github.com/ljchang/flowmail-site/releases/latest">
+              to="/docs/getting-started/download">
               Download
             </Link>
           </div>
@@ -111,28 +114,25 @@ function Features(): ReactNode {
   );
 }
 
+const privacyItems = [
+  'All data stored locally, encrypted',
+  'No analytics or telemetry',
+  'API keys in macOS Keychain',
+  'Local AI by default',
+];
+
 function Privacy(): ReactNode {
   return (
     <section className={styles.privacy}>
       <div className={styles.privacyInner}>
         <h2 className={styles.privacyTitle}>Your data stays yours</h2>
         <div className={styles.privacyItems}>
-          <div className={styles.privacyItem}>
-            <span className={styles.privacyCheck}>&check;</span>
-            All data stored locally, encrypted
-          </div>
-          <div className={styles.privacyItem}>
-            <span className={styles.privacyCheck}>&check;</span>
-            No analytics or telemetry
-          </div>
-          <div className={styles.privacyItem}>
-            <span className={styles.privacyCheck}>&check;</span>
-            API keys in macOS Keychain
-          </div>
-          <div className={styles.privacyItem}>
-            <span className={styles.privacyCheck}>&check;</span>
-            Minimal data sent to AI
-          </div>
+          {privacyItems.map((item) => (
+            <div key={item} className={styles.privacyItem}>
+              <span className={styles.privacyCheck}>✓</span>
+              {item}
+            </div>
+          ))}
         </div>
         <Link className={styles.privacyLink} to="/docs/security/overview">
           Learn more about security &amp; privacy &rarr;
@@ -151,7 +151,7 @@ function BottomCta(): ReactNode {
       </p>
       <Link
         className={styles.ctaPrimary}
-        href="https://github.com/ljchang/flowmail-site/releases/latest">
+        to="/docs/getting-started/download">
         Download for macOS
       </Link>
     </section>

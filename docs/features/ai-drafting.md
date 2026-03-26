@@ -36,7 +36,9 @@ Nothing goes out without your approval. Every draft is presented for your review
 
 ## Draft Learning
 
-Rejected a draft? Tell FlowMail why. If you explain that "this was too formal for Jake" or "I never use exclamation points," the AI remembers your preference. Future drafts to the same person or in the same context will reflect what you taught it.
+FlowMail adapts to your edits of generated emails so that it can better predict how you would actually respond. Every time you modify a draft before sending, the AI learns from the difference between what it wrote and what you changed it to.
+
+Rejected a draft outright? Tell FlowMail why. If you explain that "this was too formal for Jake" or "I never use exclamation points," the AI remembers your preference. Future drafts to the same person or in the same context will reflect what you taught it.
 
 ## Compose From Scratch
 

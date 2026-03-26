@@ -1,0 +1,87 @@
+.container {
+  margin: 1.5rem 0;
+}
+
+.versionBadge {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ifm-color-primary);
+  background: rgba(129, 140, 248, 0.1);
+  border: 1px solid rgba(129, 140, 248, 0.3);
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-primary);
+  background: rgba(129, 140, 248, 0.05);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(129, 140, 248, 0.15);
+  text-decoration: none;
+  color: inherit;
+}
+
+.platformName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.fileInfo {
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.note {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.loading {
+  padding: 1rem 0;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.9rem;
+}
+
+.fallback {
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-card-background-color);
+}
+
+.fallback p {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.fallbackLink {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: var(--ifm-button-border-radius);
+  background: var(--ifm-color-primary);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.fallbackLink:hover {
+  background: var(--ifm-color-primary-dark);
+  color: white;
+  text-decoration: none;
+}

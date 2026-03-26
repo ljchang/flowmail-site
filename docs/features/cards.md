@@ -39,11 +39,16 @@ Attach notes to any card for persistent context. Meeting notes, project plans, r
 
 ## Behaviors
 
-Set up automation rules for each card. For example:
+Cards can be associated with specific behaviors — automation rules that control how emails and tasks are handled within that context. For example:
 
 - Auto-archive newsletter emails after you read them
 - Always mark emails from a VIP sender as high priority
 - Skip triage for low-signal notifications
+- Automatically create tasks from emails that match certain patterns
+- Set a default task type (e.g., always "Compose" for a client relationship card)
+- Apply a specific tone or formality level when drafting responses
+
+Tasks can also be created directly from emails within a card. When an email needs action, FlowMail extracts it as a task in your [Focus Queue](/docs/features/focus-queue), linked back to the email and card it came from.
 
 ## Multiple Views
 

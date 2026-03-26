@@ -7,6 +7,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Getting Started',
       items: [
+        'getting-started/download',
         'getting-started/installation',
         'getting-started/connecting-accounts',
         'getting-started/quick-tour',
@@ -23,6 +24,7 @@ const sidebars: SidebarsConfig = {
         'features/memory',
         'features/people',
         'features/learning',
+        'features/keyboard-shortcuts',
       ],
     },
     {

@@ -5,7 +5,11 @@ title: Connecting Accounts
 
 # Connecting accounts
 
-FlowMail works with Gmail and Microsoft Outlook, and uses an AI provider for its intelligent features. You'll need to connect at least one email account and one AI account to get started.
+FlowMail works with Gmail and Microsoft Outlook, and uses AI models for its intelligent features. You'll need to connect at least one email account to get started.
+
+:::info Beta Notice
+FlowMail is currently in beta. Email provider integrations have some limitations during this stage — see the notes below for Gmail and Outlook.
+:::
 
 ## Gmail
 
@@ -20,6 +24,10 @@ FlowMail works with Gmail and Microsoft Outlook, and uses an AI provider for its
 - **Send email** — So you can send replies and new messages from within FlowMail.
 - **Modify labels** — So FlowMail can mark messages as read, archive them, and manage labels on your behalf.
 - **Calendar access** — So FlowMail can create calendar events when you schedule tasks.
+
+:::note Beta Limitation
+FlowMail's Google integration is not yet verified by Google. During the beta period, your Google account must be added as a test account by the developer before you can connect. Please reach out to us to get your account added.
+:::
 
 ## Microsoft Outlook
 
@@ -36,9 +44,26 @@ FlowMail works with Gmail and Microsoft Outlook, and uses an AI provider for its
 - **Calendar access** — So FlowMail can create calendar events when you schedule tasks.
 - **Offline access** — So FlowMail can sync your email in the background even when you're not actively using the app.
 
-## AI account
+:::note Beta Limitation
+Outlook integration is currently configured as single-tenant for Dartmouth College users only. Support for additional organizations is coming soon.
+:::
 
-FlowMail's intelligent features — email classification, task extraction, smart drafting, and learning — require an AI provider.
+## AI models
+
+FlowMail's intelligent features — email classification, task extraction, smart drafting, and learning — require AI models.
+
+### Local models (recommended)
+
+We recommend using local open weight models by default so that your information never leaves your computer. FlowMail includes built-in support for running models directly on your Mac — no API key or account needed.
+
+1. Open **Settings** and navigate to the **Models** section.
+2. Select a local model. FlowMail will download it automatically on first use.
+
+Local models run entirely on your device using Apple Silicon acceleration. Your email content is never sent to any external service.
+
+### Cloud AI providers (optional)
+
+If you would like faster or more powerful models, you can connect your own API keys to a cloud AI provider:
 
 1. Open **Settings** and navigate to the **Models** section.
 2. Click **Add AI Account**.

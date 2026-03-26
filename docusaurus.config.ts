@@ -66,6 +66,13 @@ const config: Config = {
   ],
 
   themeConfig: {
+    announcementBar: {
+      id: 'beta',
+      content: 'FlowMail is currently in beta. Some features and integrations are still being finalized.',
+      backgroundColor: '#1e293b',
+      textColor: '#f59e0b',
+      isCloseable: true,
+    },
     image: 'img/flowmail-social-card.jpg',
     colorMode: {
       defaultMode: 'dark',
@@ -86,7 +93,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/ljchang/flowmail-site/releases/latest',
+          to: '/docs/getting-started/download',
           label: 'Download',
           position: 'right',
         },

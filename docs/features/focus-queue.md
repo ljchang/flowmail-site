@@ -20,6 +20,7 @@ Inspired by [Getting Things Done (GTD)](https://gettingthingsdone.com/), every t
 - **Research** — You can't act yet because you need more information. Investigate or clarify first.
 - **Waiting** — You've delegated this or you're blocked on someone else. Check back later.
 - **Schedule** — Create a calendar event or coordinate a meeting time.
+- **Delegate** — Forward to someone better suited to handle it. The task moves to your Waiting queue so you remember to follow up.
 
 ## The Clarify Step
 

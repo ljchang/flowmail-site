@@ -30,18 +30,19 @@ Each task has a type that tells you what kind of action is needed:
 - **Research** — Investigate or gather information before you can act.
 - **Waiting** — You're blocked or waiting on someone else.
 - **Schedule** — Add an event to your calendar.
+- **Delegate** — Forward to someone better suited to handle it.
 
 ## Compose
 
-Write new emails or let the AI draft context-aware responses. When replying to a thread, FlowMail draws on the Card context, your relationship with the recipient, and the conversation history to suggest a draft that sounds like you.
+Write new emails or let the AI draft context-aware responses. When replying to a thread, FlowMail draws on the Card context, your relationship with the recipient, and the conversation history to suggest a draft that sounds like you. The AI adapts to your edits over time — every change you make to a generated draft teaches it how you would actually respond.
 
 ## Memory
 
-A window into what FlowMail has learned about your world — facts about your contacts, details about your projects, and your communication preferences. You can review everything it remembers, correct anything that's wrong, and delete things you'd rather it forget.
+Think of memories like general knowledge or notes that FlowMail uses to help draft emails. As you use the app, it extracts facts about your contacts, projects, and preferences from your email conversations. You can review everything it remembers, correct anything that's wrong, and delete things you'd rather it forget.
 
 ## People
 
-Your contacts and relationships. FlowMail tracks who you communicate with, how often, and the nature of your interactions. This helps the AI understand the social context behind your emails — who's a close collaborator, who's a new contact, and how formal or casual each relationship is.
+Your contacts and relationships. FlowMail tracks who you communicate with, how often, and the nature of your interactions. This helps the AI understand the social context behind your emails — who's a close collaborator, who's a new contact, and how formal or casual each relationship is. People can also be used as contexts to generate better emails or figure out who an email should be sent to.
 
 ## Learning
 

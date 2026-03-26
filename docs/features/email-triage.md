@@ -49,8 +49,10 @@ Emails are displayed as threaded conversations, so you always see the full conte
 
 Power through your inbox with keyboard shortcuts:
 
-- **Arrow keys** to navigate between emails
+- **j / k** to navigate between emails
+- **e** to archive the selected email
+- **r** to reply
+- **c** to open the card picker
 - **Shift + Arrow** to multi-select emails for batch actions
-- Quick keys for archive, trash, and label management
 
-The goal is to get through triage as fast as you think — no mouse required.
+The goal is to get through triage as fast as you think — no mouse required. See the full list of shortcuts on the [Keyboard Shortcuts](/docs/features/keyboard-shortcuts) page.
