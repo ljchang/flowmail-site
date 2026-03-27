@@ -9,6 +9,12 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.1.49 (2026-03-27)
+
+- Add benchmark comparison charts with metric selector and config toggles
+- Fix clippy: use strip_suffix instead of manual suffix stripping
+
+
 ## v0.1.48 (2026-03-27)
 
 - Refactor BehaviorsTab to unified task type system
