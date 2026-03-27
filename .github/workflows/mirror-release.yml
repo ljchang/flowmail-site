@@ -54,13 +54,12 @@ jobs:
         env:
           TAG: ${{ github.event.client_payload.tag }}
         run: |
-          DATE=$(date -u +%Y-%m-%d)
-
           python3 << 'SCRIPT'
           import os
+          from datetime import datetime, timezone
 
           tag = os.environ["TAG"]
-          date = os.environ["DATE"]
+          date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
           with open("/tmp/notes.md", "r") as f:
               notes = f.read().strip()

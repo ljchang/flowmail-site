@@ -9,6 +9,19 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.1.48 (2026-03-27)
+
+- Refactor BehaviorsTab to unified task type system
+- Integrate template picker and save-to-template into compose components
+- Add frontend template service, store, picker, and save modal
+- Sync task types to V030 schema: add remember/ask, remove approval/input_needed
+- Refactor behavior executor to unified create_task dispatch and fix triggers
+- Add template Tauri commands with placeholder resolution and signature stripping
+- Add reply_templates table, template_id on tasks, and behavior migration (V030)
+- Fix benchmark results: add thinking column, richer detail, CSV/JSON export
+- Fix email triage filter and add keyword detection to EmailPreview task input
+- Add thinking mode toggle to benchmark config UI
+
 ## v0.1.47 (2026-03-27)
 
 - Add draft writing rules UI and opt-in Self-Refine for drafts
