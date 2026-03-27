@@ -9,24 +9,49 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
-##  ()
+## v0.1.47 (2026-03-27)
 
-**Full Changelog**: https://github.com/ljchang/flowmail/compare/v0.1.46...v0.1.47
+- Add draft writing rules UI and opt-in Self-Refine for drafts
+- Add max test cases limit to benchmark (default 5)
+- Fix clippy: use is_some_and instead of map_or(false, ...)
 
+## v0.1.46 (2026-03-27)
 
-##  ()
+- Fix all Svelte a11y warnings and unused CSS
+- Remove broken Metal PagedAttention, fix benchmark to use production inference
+- Add Reconnect button to email account settings
 
-**Full Changelog**: https://github.com/ljchang/flowmail/compare/v0.1.45...v0.1.46
+## v0.1.45 (2026-03-27)
 
+- Hide triaged emails from triage view by default
+- Fix People tab: email direction, self-contact, org classification, auto-relationships
+- Add account filtering in triage and account selection in focus compose
+- Add docs link to Settings preferences
+- Fix OAuth re-auth fallback: handle plain string errors from Tauri IPC
 
-##  ()
+## v0.1.44 (2026-03-27)
 
-**Full Changelog**: https://github.com/ljchang/flowmail/compare/v0.1.44...v0.1.45
+- Fix notify-site: use github.token to read release notes
+- Allow clippy::too_many_arguments on contact update functions
 
+## v0.1.43 (2026-03-26)
 
-##  ()
+- Fix calendar event creation: add timezone and non-blocking extraction
+- Fix multi-account sync: restore incremental sync and accurate counts
+- Connect task extraction to Reflexion+LEAP learning pipeline
+- Remove Context panel (RightPanel) feature
+- Fix CIPHER draft self-learning pipeline and learning tab display
+- Add sent email view, account-specific signatures, and card drag fixes
+- Persist new email drafts and add markdown preview in InlineCompose
+- Add customizable keyboard shortcuts and fix People view navigation
+- Add People page improvements: CRUD, sorting, org classification, email preview, network graph
+- Fix thread-level importance reclassification in triage view
+- Move releases to public repo and simplify updater
 
-**Full Changelog**: https://github.com/ljchang/flowmail/compare/v0.1.43...v0.1.44
+## v0.1.42 (2026-03-26)
 
-
-
+- Add domain filtering to Learning overview charts
+- Add People system, delegate action, and keyword detection
+- Move benchmark to Settings tab and update scoring to use action_needed
+- Add Shift+Arrow keyboard multi-select in triage view
+- Add schedule task type and scope Add to Calendar button to it

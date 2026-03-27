@@ -32,29 +32,46 @@ jobs:
           sed -i 's|ljchang/flowmail/releases|ljchang/flowmail-site/releases|g' artifacts/latest.json
           cat artifacts/latest.json
 
+      - name: Fetch release notes from private repo
+        env:
+          GH_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
+        run: |
+          TAG="${{ github.event.client_payload.tag }}"
+          gh release view "$TAG" --repo ljchang/flowmail --json body -q .body > /tmp/notes.md
+          cat /tmp/notes.md
+
       - name: Create public release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TAG="${{ github.event.client_payload.tag }}"
-          NOTES="${{ github.event.client_payload.notes }}"
 
           gh release create "$TAG" artifacts/* \
             --title "FlowMail $TAG" \
-            --notes "$NOTES"
+            --notes-file /tmp/notes.md
 
       - name: Update changelog
+        env:
+          TAG: ${{ github.event.client_payload.tag }}
         run: |
-          TAG="${{ github.event.client_payload.tag }}"
           DATE=$(date -u +%Y-%m-%d)
 
           python3 << 'SCRIPT'
           import os
 
-          tag = os.environ.get("TAG", "")
-          date = os.environ.get("DATE", "")
-          # Read notes from the dispatch payload via env
-          notes = """${{ github.event.client_payload.notes }}"""
+          tag = os.environ["TAG"]
+          date = os.environ["DATE"]
+
+          with open("/tmp/notes.md", "r") as f:
+              notes = f.read().strip()
+
+          # Strip private repo compare links
+          lines = []
+          for line in notes.splitlines():
+              if "github.com/ljchang/flowmail/compare" in line:
+                  continue
+              lines.append(line)
+          notes = "\n".join(lines).strip()
 
           with open("docs/changelog.md", "r") as f:
               content = f.read()
@@ -62,7 +79,6 @@ jobs:
           marker = "<!-- RELEASES -->"
           entry = f"\n\n## {tag} ({date})\n\n{notes}\n"
 
-          # Remove the placeholder text if present
           content = content.replace(
               "*No releases published yet. Check back soon!*", ""
           )
