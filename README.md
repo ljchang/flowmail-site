@@ -1,41 +1,47 @@
-# Website
+# FlowMail
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+AI-powered email management for macOS. FlowMail organizes email around your mental contexts, learns from your corrections, and drafts responses that sound like you.
 
-## Installation
+**[Documentation](https://ljchang.github.io/flowmail-site/)** | **[Download](https://ljchang.github.io/flowmail-site/docs/getting-started/download)**
 
-```bash
-yarn
-```
+## Features
 
-## Local Development
+- **Cards** -- Mental contexts (projects, people, topics) that organize your email automatically
+- **AI Triage** -- Classifies and prioritizes incoming email with self-improving accuracy
+- **Focus Queue** -- GTD-inspired task extraction with concrete next actions
+- **Smart Drafting** -- Context-aware responses that adapt to your editing style
+- **Memory** -- Automatic knowledge extraction from your conversations
+- **People** -- Relationship tracking for tone-appropriate communication
+- **Local AI** -- Run open weight models on-device so your data never leaves your Mac
 
-```bash
-yarn start
-```
+## Tech Stack
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+- **Desktop shell**: Tauri 2.0 (Rust)
+- **Frontend**: Svelte 5 + Vite + Tailwind CSS v4
+- **Database**: SQLite (SQLCipher encrypted)
+- **Search**: Tantivy full-text search
+- **AI**: Local models (recommended) or cloud providers (Claude, OpenAI, Gemini)
 
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
+## Development
 
 ```bash
-USE_SSH=true yarn deploy
+npm install           # Install frontend deps
+npm run tauri dev     # Full dev mode (Rust + frontend)
+npm run tauri build   # Production build
 ```
 
-Not using SSH:
+See the [docs](https://ljchang.github.io/flowmail-site/) for more details.
+
+## Documentation Site
+
+The documentation is built with [Docusaurus](https://docusaurus.io/) and hosted on GitHub Pages.
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+npm install       # Install deps
+npm start         # Local dev server
+npm run build     # Production build
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## License
+
+Copyright 2026 Luke Chang
