@@ -9,4 +9,9 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
-*No releases published yet. Check back soon!*
+##  ()
+
+**Full Changelog**: https://github.com/ljchang/flowmail/compare/v0.1.43...v0.1.44
+
+
+
