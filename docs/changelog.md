@@ -9,6 +9,16 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.1.50 (2026-03-27)
+
+- Skip triage for sent emails, extract memories, fix Sent Tab
+- Fix triage keyboard navigation: highlight, scroll-into-view, and select-next after delete
+- Fix email readability by overriding inline dark text colors in HTML emails
+- Add Create Template option to template picker dropdown
+- Add production context as benchmark parameter, fix charts and card accuracy
+- Fix Focus Queue to use approve_and_send_draft for CIPHER learning
+- Remove unused avatar placeholder from top bar
+
 ## v0.1.49 (2026-03-27)
 
 - Add benchmark comparison charts with metric selector and config toggles

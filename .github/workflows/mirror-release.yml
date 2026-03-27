@@ -12,8 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
       - name: Download release artifacts
         env:
@@ -94,3 +92,9 @@ jobs:
           git add docs/changelog.md
           git commit -m "Add release notes for $TAG" || echo "No changelog changes"
           git push
+
+      - name: Trigger GitHub Pages deploy
+        env:
+          GH_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
+        run: |
+          gh workflow run deploy.yml --repo ljchang/flowmail-site
