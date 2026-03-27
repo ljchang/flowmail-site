@@ -118,7 +118,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright \u00a9 ${new Date().getFullYear()} FlowMail`,
+      copyright: `Copyright \u00a9 ${new Date().getFullYear()} Luke Chang`,
     },
     prism: {
       theme: prismThemes.github,

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import styles from './styles.module.css';
 
 const CACHE_TTL_MS = 60 * 60 * 1000; // 1 hour
-const REPO = 'ljchang/flowmail';
+const REPO = 'ljchang/flowmail-site';
 const APP_NAME = 'FlowMail';
 const ASSET_MATCH = '.dmg';
 
