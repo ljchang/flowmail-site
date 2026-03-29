@@ -9,6 +9,30 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.4 (2026-03-29)
+
+- Simplify: extract CorrectionContext helper, merge replan commands, fix snapshot/annotation bugs
+- Fix frontend/backend parameter mismatches: updateNodeKind, skipPlanNode, replan node_id
+- Add correction-derived benchmark cases query and command
+- Add DAG-level re-plan feedback bar to PlanDAGCanvas
+- Add DAG node annotations: kind editing, annotation textarea, skip button in PlanDetailPanel
+- Replace dismiss dropdown with feedback panel in TaskInputWidget
+- Add plan feedback backend commands: replan, node annotations, skip
+- Pass user_feedback through planning reflexion pipeline
+- Add plan feedback DB schema: correction snapshots, node annotations, query helpers
+- Add .worktrees/ to gitignore
+- Add plan cancel/retry actions and fix Plans layout
+- Simplify benchmarks: merge error constructors, hoist prompt load, rename cmd, remove unused import
+- Add learning benchmark UI: A/B comparison, snapshots display, domain selector
+- Add learning benchmark: A/B runner, snapshots storage, get_learning_snapshots
+- Add learning benchmark schema: snapshots table, learning_variant field
+- Add implementation plan: benchmark Phase 4 - learning A/B benchmarks
+- Add pipeline task type to benchmark UI
+- Add pipeline benchmark: run_pipeline_test, score_pipeline, end-to-end orchestration
+- Fix clippy too_many_arguments on create_lightweight_plan
+- Add pipeline benchmark fields: action_surfaced, urgency_band, card_assignment, node_count, llm_calls
+
+
 ## v0.2.3 (2026-03-29)
 
 - Add inline prompt viewer to Components tab, remove dead model selectors
