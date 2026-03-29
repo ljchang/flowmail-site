@@ -54,7 +54,15 @@ jobs:
       - name: Update changelog
         env:
           TAG: ${{ github.event.client_payload.tag }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # Fix credentials: gh commands above may have overridden the
+          # credential helper with PRIVATE_REPO_TOKEN. Reset to GITHUB_TOKEN.
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}"
+
+          # Pull latest in case another release pushed since checkout
+          git pull --rebase origin main
+
           python3 << 'SCRIPT'
           import os
           from datetime import datetime, timezone
@@ -76,6 +84,11 @@ jobs:
           with open("docs/changelog.md", "r") as f:
               content = f.read()
 
+          # Skip if this version is already in the changelog
+          if f"## {tag} (" in content:
+              print(f"{tag} already in changelog, skipping")
+              exit(0)
+
           marker = "<!-- RELEASES -->"
           entry = f"\n\n## {tag} ({date})\n\n{notes}\n"
 
@@ -91,8 +104,16 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/changelog.md
-          git commit -m "Add release notes for $TAG" || echo "No changelog changes"
-          git push
+          git diff --cached --quiet && echo "No changelog changes" && exit 0
+          git commit -m "Add release notes for $TAG"
+
+          # Retry with rebase if another release pushed between pull and push
+          for i in 1 2 3; do
+            git push && break
+            echo "Push failed (attempt $i), rebasing and retrying..."
+            git pull --rebase origin main
+            sleep 2
+          done
 
       - name: Trigger GitHub Pages deploy
         env:
