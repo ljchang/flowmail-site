@@ -9,6 +9,22 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.3 (2026-03-29)
+
+- Add inline prompt viewer to Components tab, remove dead model selectors
+- Add implementation plan: benchmark Phase 3 - pipeline benchmarks
+- Add memory task type to benchmark UI: config, results, test case generation
+- Add memory benchmark: benchmark_memory, run_memory_test, score_memory, test case generation
+- Fix plan executor skipping Ready nodes and graph over-zoom
+- Add memory benchmark fields: fact_precision, fact_recall, entity_accuracy
+- Add implementation plan: benchmark Phase 2 - memory task type
+- Add plan task type to benchmark UI: config, results, test case generation
+- Add plan benchmark: benchmark_plan, run_plan_test, score_plan, test case generation
+- Add plan benchmark fields: complexity_correct, urgency_delta, node_kinds_correct
+- Add implementation plan: benchmark Phase 1 - plan task type
+- Add design spec: comprehensive benchmark system update
+
+
 ## v0.2.2 (2026-03-29)
 
 - Fix: remove card_notes from feature-gated benchmark DraftContext
