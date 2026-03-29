@@ -9,6 +9,81 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.0 (2026-03-29)
+
+- Update Cargo.lock
+- Fix review: FK constraint, transaction, compute mode, node delete, double load, click-outside
+- Wire plan editing into PlansPage and add editable config to detail panel
+- Add AddNodeMenu and enable interactive DAG editing in canvas
+- Add plan mutation queries and commands: add/remove node/edge, update config
+- Add Phase C full DAG editing implementation plan
+- Implement PlansPage with split layout: plan list + DAG canvas
+- Add list_plans query and command with status/level filters
+- Add Plans to sidebar navigation with placeholder page
+- Add Phase B Plans page implementation plan
+- Fix review: cache plan data, null guard dagre, in-place selection, merge plan commands
+- Integrate inline plan DAG canvas into Focus Queue TaskInputWidget
+- Add plan inspector components: dagre layout, PlanNodeCard, DAGCanvas, DetailPanel
+- Add get_plan_with_edges command returning plan + nodes + edges
+- Add @xyflow/svelte and @dagrejs/dagre dependencies
+- Add Phase A plan inspector implementation plan
+- Add plan inspector and DAG editor design spec
+- Fix review: correct prompt variables, batch planning count, use shared Button
+- Add Components tab to Learning page showing improvable component registry
+- Add Planning domain to Learning tab: reflexions, rules, prompts, thresholds
+- Add deep tier inference settings to backend and frontend model store
+- Add Deep variant to ModelTask enum to fix manifest deserialization
+- Fix model defaults: Fast=Qwen3-4B, Standard=Qwen3-8B, Deep=Qwen3-32B
+- Add three-tier model selector (Fast/Standard/Deep) with Qwen 3 defaults
+- Add multi-input trigger commands and frontend polling for scheduled triggers
+- Add V036 scheduled_triggers table with types and queries
+- Add PlanEvent enum and generalize plan generator for multi-input triggers
+- Add Phase 8 implementation plan: multi-input triggers
+- Add trigger_meta_improvement command with configurable frequency via learning_settings
+- Add L2 meta-improvement: plan generation, analysis handler, L1 proposal
+- Add Phase 7 implementation plan: L2 meta-improvement
+- Fix review: transaction for activate_version, log seed errors, fix node types and domain mapping
+- Add Tauri commands for component registry and L1 improvement trigger
+- Add L1 node handlers: retrieve_component, analyze, generate_improved, apply
+- Add L1 improvement plan generation and improve_prompt template
+- Add component seeding and DB-first prompt loading
+- Add component registry: V035 migration, types, CRUD queries
+- Add Phase 6 implementation plan: L1 improvement plans + component registry
+- Fix review: log correction errors, truncate reflexion body, optimize node lookup
+- Wire plan corrections into approve_plan_node and add frontend wrapper
+- Add record_plan_correction command with background reflexion generation
+- Add planning domain to reflexion system with prompt and correction queries
+- Add Phase 5 implementation plan: planning corrections + LEAP
+- Update planner prompt for extraction and add candidate review wrappers
+- Implement extract_knowledge and update_contact plan node handlers
+- Add Phase 4 implementation plan: knowledge extraction
+- Fix review: unify node types, fix archive template, efficiency improvements
+- Add template CRUD commands and seed default templates
+- Integrate tiered generation: template match (Tier 0) before LLM (Tier 1)
+- Add template matching, instantiation, and tier assignment
+- Add plan template CRUD queries
+- Add V034 plan_templates migration and PlanTemplate types
+- Add Phase 3 implementation plan: tiered generation + plan templates
+- Fix review issues: generator lock, NULL input_data, debounce events, json_extract, retry logging
+- Add Tauri event listeners for real-time plan status updates
+- Add wait condition support: query waiting nodes, resume on reply
+- Rewrite executor for parallel DAG execution with Tauri event emission
+- Refactor handlers to use Arc<Mutex<Connection>> with short lock holds
+- Add Phase 2 implementation plan: parallel DAG execution
+- Fix review issues: edge type, started_at, error handling, N+1 queries, From impl
+- Add plan service and update Focus Queue to show plan nodes
+- Add Tauri commands for plan operations: generate, focus queue, details, approve
+- Add sequential plan executor with output passing and checkpoint support
+- Add node handlers: classify, draft, send, archive, retrieve, extract
+- Add Tier 1 light plan generator for email events
+- Add plan_generator.toml prompt template and loader
+- Add plan/node CRUD queries and Focus Queue query
+- Add plan module with core types: Node, Plan, enums, FocusQueueItem
+- Add V033 migration: plans, plan_nodes, plan_node_edges, plan_corrections
+- Add Phase 1 implementation plan: core schema + linear plans
+- Add FlowMail v2 plan-centric architecture design spec
+
+
 ## v0.1.50 (2026-03-27)
 
 - Skip triage for sent emails, extract memories, fix Sent Tab
