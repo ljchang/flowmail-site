@@ -18,16 +18,15 @@ When new emails arrive, FlowMail's AI reads each one and classifies it by the ac
 - **Scheduling** — Meeting requests or calendar coordination
 - **Delegation** — Something better handled by someone else
 
+When classification determines that action is needed, FlowMail creates a plan to handle it — connecting directly to the [Plans](/docs/features/plans) system so nothing falls through the cracks.
+
 You never have to manually sort your inbox again.
 
-## Priority at a Glance
+## Important vs. Other
 
-Each email gets a color-coded priority label so you can scan your inbox in seconds:
+FlowMail sorts every email into two buckets: **Important** and **Other**. Important emails are the ones that need your attention or action — a question from a colleague, a decision that's waiting on you, a deadline approaching. Everything else — newsletters, notifications, FYI messages, automated alerts — lands in Other.
 
-- **Critical** (red) — Needs your attention right now
-- **Action Needed** (amber) — Important, handle today
-- **FYI** (blue) — Good to know, no action required
-- **Newsletter** (gray) — Subscriptions and digests
+What counts as "important" is personal, and FlowMail learns your definition over time. Every time you correct a classification, the AI adjusts its reasoning. After a few days of use, it knows that emails from your CEO are always important and that weekly digest emails never are.
 
 ## Smart Card Assignment
 
@@ -56,3 +55,7 @@ Power through your inbox with keyboard shortcuts:
 - **Shift + Arrow** to multi-select emails for batch actions
 
 The goal is to get through triage as fast as you think — no mouse required. See the full list of shortcuts on the [Keyboard Shortcuts](/docs/features/keyboard-shortcuts) page.
+
+## Batch Smart Commands
+
+When you select multiple emails, a batch bar appears where you can type natural language commands. Say "important" to reclassify them all, "delegate" to flag them for delegation, "assign to Project Alpha" to route them to a card, or "schedule" to mark them for calendar follow-up. FlowMail interprets the command and applies the right action to every selected email at once.

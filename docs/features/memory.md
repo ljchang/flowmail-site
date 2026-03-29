@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: "Memory"
 ---
 
@@ -43,4 +43,4 @@ Over time, you may accumulate overlapping or duplicate memories. FlowMail period
 
 ## Powering Smarter AI
 
-Your memory isn't just a reference for you — it's a reference for FlowMail's AI. When drafting responses, classifying emails, or extracting tasks, the AI draws on your memories to make better, more informed decisions. The more FlowMail remembers, the more personalized and accurate it becomes.
+Your memory isn't just a reference for you — it's a reference for FlowMail's AI. When drafting responses, classifying emails, or planning actions, the AI draws on your memories to make better, more informed decisions. The more FlowMail remembers, the more personalized and accurate it becomes.

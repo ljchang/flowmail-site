@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 title: "Learning & Self-Improvement"
 ---
 
@@ -15,7 +15,7 @@ When you correct a classification or dismiss a task, FlowMail doesn't just recor
 
 This self-reflection happens automatically in the background after every correction. Within seconds, FlowMail has a written analysis of its own mistake — not just the fact that it was wrong, but the reasoning behind the error.
 
-**Example:** You mark an email as "Action Needed" that FlowMail classified as "FYI." FlowMail's self-reflection might determine: *"I missed that the sender asked a direct question in the third paragraph. Emails containing direct questions addressed to the user should be classified as Action Needed, even when the subject line appears informational."*
+**Example:** You mark an email as "Important" that FlowMail classified as "Other." FlowMail's self-reflection might determine: *"I missed that the sender asked a direct question in the third paragraph. Emails containing direct questions addressed to the user should be classified as Important, even when the subject line appears informational."*
 
 ## Tier 2 — Pattern Recognition (Rule Extraction)
 
@@ -23,7 +23,7 @@ After accumulating several corrections and their analyses, FlowMail looks across
 
 **Examples of learned rules:**
 
-- "Emails from the legal team about contracts should always be Action Needed"
+- "Emails from the legal team about contracts should always be Important"
 - "Weekly digest emails are never urgent"
 - "When Sarah from Marketing sends a document, it usually needs review within 24 hours"
 
@@ -53,20 +53,24 @@ Want to set a rule explicitly? Write your own custom rules that FlowMail will al
 
 **Examples:**
 
-- "Never mark emails from my CEO as low priority"
-- "Emails with 'URGENT' in the subject are always Critical"
-- "Messages from noreply addresses are always Newsletter priority"
+- "Never mark emails from my CEO as Other"
+- "Emails with 'URGENT' in the subject are always Important"
+- "Messages from noreply addresses are never Important"
 
 ## Multi-Domain Learning
 
 FlowMail learns separately for each type of AI task:
 
 - **Triage classification** — How to categorize and prioritize your emails
-- **Task extraction** — What counts as an actionable task and how to categorize it
+- **Planning** — What actions to take and how to structure multi-step workflows
 - **Draft generation** — Your writing style, tone preferences, and communication habits
 - **Memory extraction** — What facts are worth remembering and how to phrase them
 
-A correction to email classification improves triage without affecting task extraction, and vice versa. Each domain has its own set of learned rules tuned to its specific purpose.
+A correction to email classification improves triage without affecting planning, and vice versa. Each domain has its own set of learned rules tuned to its specific purpose.
+
+## Prompt Improvement
+
+Beyond learning rules, FlowMail can also improve its own internal prompt templates based on correction patterns. When the system notices consistent themes in your feedback, it refines the instructions it gives itself for future similar situations. This means the AI doesn't just learn *what* to do differently — it learns how to *think* about your emails differently.
 
 ---
 

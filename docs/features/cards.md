@@ -9,11 +9,11 @@ Your brain doesn't organize information by date received or sender name. It orga
 
 ## What Is a Card?
 
-A Card is a mental bucket — a container for everything related to one area of your life or work. Each card groups emails, tasks, notes, and AI context together in one place.
+A Card is a mental bucket — a container for everything related to one area of your life or work. Each card groups emails, plans, and AI context together in one place.
 
 **Examples of cards:**
 
-- "Project Alpha" — all emails, tasks, and notes for a specific project
+- "Project Alpha" — all emails, plans, and context for a specific project
 - "Team Standup" — recurring meeting coordination and follow-ups
 - "Sarah (Design Lead)" — your working relationship with a specific person
 - "Q2 Budget" — a time-bound topic with its own context
@@ -25,7 +25,7 @@ Cards can contain subcards for more granular organization. Your "Engineering" ca
 
 ## AI-Powered Context
 
-Each card has a system prompt — a description that tells the AI what this card is about. When the AI classifies emails, extracts tasks, or drafts responses related to this card, it uses that context to make better decisions.
+Each card has a system prompt — a description that tells the AI what this card is about. When the AI classifies emails, creates plans, or drafts responses related to this card, it uses that context to make better decisions.
 
 For example, your "Legal Reviews" card might tell the AI: "Emails in this card are about contract reviews. They are always high priority and usually require a detailed response within 48 hours."
 
@@ -33,29 +33,26 @@ For example, your "Legal Reviews" card might tell the AI: "Emails in this card a
 
 You don't have to manually file emails into cards. FlowMail's AI reads each incoming email and assigns it to the most relevant card automatically. An email about a contract goes to your Legal card. A message from your design lead goes to that relationship card. If the AI gets it wrong, just drag it to the right card — and the AI learns from the correction.
 
-## Notes
+## Templates & Automation
 
-Attach notes to any card for persistent context. Meeting notes, project plans, reference links — anything that helps you (and the AI) stay informed. These notes are visible when you're working in that card and are available to the AI when drafting responses.
-
-## Behaviors
-
-Cards can be associated with specific behaviors — automation rules that control how emails and tasks are handled within that context. For example:
+Cards can have templates — reusable response templates and automation rules that control how emails and plans are handled within that context. For example:
 
 - Auto-archive newsletter emails after you read them
-- Always mark emails from a VIP sender as high priority
+- Always mark emails from a VIP sender as Important
 - Skip triage for low-signal notifications
-- Automatically create tasks from emails that match certain patterns
-- Set a default task type (e.g., always "Compose" for a client relationship card)
+- Automatically create lightweight plans from emails that match certain patterns
 - Apply a specific tone or formality level when drafting responses
 
-Tasks can also be created directly from emails within a card. When an email needs action, FlowMail extracts it as a task in your [Focus Queue](/docs/features/focus-queue), linked back to the email and card it came from.
+Plans can also be created directly from emails within a card. When an email needs action, FlowMail extracts it as a plan in your [Focus Queue](/docs/features/focus-queue), linked back to the email and card it came from.
 
-## Multiple Views
+## Card Detail
 
-Work with your cards the way that suits you:
+When you open a card, you get a single detail view organized into four tabs:
 
-- **Kanban view** — See cards as columns with their emails, like a project board
-- **Focus view** — Dive into one card at a time with its emails, tasks, and notes side by side
+- **Emails** — All emails assigned to this card
+- **Plans** — Active plans and actions linked to this card
+- **Templates** — Response templates tailored to this card's context
+- **Instructions** — The card's system prompt and configuration
 
 ## Drag-and-Drop
 

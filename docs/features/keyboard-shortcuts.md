@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 9
 title: "Keyboard Shortcuts"
 ---
 
@@ -26,12 +26,12 @@ Press a number key to jump directly to any view:
 |-----|------|
 | `1` | Triage |
 | `2` | Focus Queue |
-| `3` | Cards |
-| `4` | Memory |
-| `5` | Learning |
-| `6` | Settings |
-| `7` | Archive |
-| `8` | Trash |
+| `3` | Plans |
+| `4` | Cards |
+| `5` | People |
+| `6` | Memory |
+| `7` | Learning |
+| `8` | Settings |
 
 ## Triage Shortcuts
 
@@ -62,7 +62,7 @@ Press `Cmd+K` to open the command palette — a quick-access search bar that let
 ## Tips
 
 - **Stay in flow**: Use `j`/`k` to move through your inbox and `e` to archive — you can clear your triage queue without touching the mouse.
-- **Quick context switching**: Number keys let you bounce between views instantly. Press `1` to go back to triage, `2` to check your tasks, `3` to see your cards.
+- **Quick context switching**: Number keys let you bounce between views instantly. `1` for triage, `2` for your focus queue, `3` for plans, `4` for cards.
 - **Batch processing**: Hold `Shift` and use arrow keys to select multiple emails, then apply actions to all of them at once.
 - **Command palette for everything**: If you forget a shortcut or want to jump to a specific card, `Cmd+K` is your universal search.
 - **Shortcuts are also listed in Settings**: Open **Settings > Preferences** to see the full shortcut reference within the app.

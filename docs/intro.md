@@ -31,13 +31,13 @@ FlowMail remembers the people in your life and how you interact with them. It tr
 
 ## Smart drafts
 
-When you compose an email, FlowMail draws on everything it knows: the Card context for the project or topic, your memories and notes, your history with the recipient, and the thread so far. Drafts feel like something you would actually write, not generic AI output.
+When you compose an email, FlowMail draws on everything it knows: the Card context for the project or topic, your memories, your history with the recipient, and the thread so far. Drafts feel like something you would actually write, not generic AI output.
 
 FlowMail also adapts to your edits. Every time you modify a generated draft before sending, the AI learns from your changes so future drafts better match how you would actually respond.
 
 ## Getting things done
 
-FlowMail loosely follows the Getting Things Done philosophy. Every email that needs action gets a clear next step — not a vague "follow up later" reminder. Tasks are categorized by type: compose a reply, take an action, research something, wait for someone else, delegate, or schedule a meeting. This keeps your focus queue actionable and prevents items from going stale.
+FlowMail loosely follows the Getting Things Done philosophy. Every email that needs action gets a clear next step — not a vague "follow up later" reminder. Action items are organized as plans — each with a clear type: compose a reply, take an action, research something, wait for someone else, delegate, or schedule a meeting. When a response requires multiple steps, FlowMail chains them into a connected plan so nothing gets lost between steps. This keeps your focus queue actionable and prevents items from going stale.
 
 ## How it's different
 

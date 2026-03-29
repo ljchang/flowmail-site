@@ -50,7 +50,7 @@ Outlook integration is currently configured as single-tenant for Dartmouth Colle
 
 ## AI models
 
-FlowMail's intelligent features — email classification, task extraction, smart drafting, and learning — require AI models.
+FlowMail's intelligent features — email classification, planning, smart drafting, and learning — require AI models.
 
 ### Local models (recommended)
 

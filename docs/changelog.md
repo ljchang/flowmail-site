@@ -89,7 +89,7 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 - Add Tauri event listeners for real-time plan status updates
 - Add wait condition support: query waiting nodes, resume on reply
 - Rewrite executor for parallel DAG execution with Tauri event emission
-- Refactor handlers to use Arc<Mutex<Connection>> with short lock holds
+- Refactor handlers to use `Arc<Mutex<Connection>>` with short lock holds
 - Add Phase 2 implementation plan: parallel DAG execution
 - Fix review issues: edge type, started_at, error handling, N+1 queries, From impl
 - Add plan service and update Focus Queue to show plan nodes

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: "AI Drafting"
 ---
 
@@ -13,7 +13,6 @@ When you ask FlowMail to draft a response, the AI doesn't just look at the last 
 
 - **The full email thread** — every message in the conversation, not just the latest one
 - **Your card's system prompt** — the context you've defined for this area of your work
-- **Notes on the card** — meeting notes, reference material, project details
 - **Your relationship with the sender** — how formal or casual your communication tends to be
 - **Your communication preferences** — your writing style, common sign-offs, level of detail
 
@@ -46,4 +45,4 @@ AI drafting isn't just for replies. Start a new email from scratch with AI assis
 
 ## Response Planning
 
-For complex emails that need a thoughtful, multi-part response, FlowMail can break the reply into sub-tasks. Instead of trying to tackle everything at once, you work through each point methodically — and the AI helps you draft each section.
+For complex emails that need a thoughtful, multi-part response, FlowMail can break the reply into a multi-step plan. Instead of trying to tackle everything at once, each point is handled methodically — with AI assistance at every step.

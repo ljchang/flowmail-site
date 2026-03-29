@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 title: "People & Relationships"
 ---
 
@@ -25,7 +25,7 @@ Browse your contacts with a clear view of recent interaction history. See at a g
 
 ## Delegation
 
-When a task is better handled by someone else, delegate it directly from FlowMail. Forward tasks to specific people with the relevant context attached — they get what they need, and the task moves to your "Waiting" queue so you remember to follow up.
+When something is better handled by someone else, delegate it directly from FlowMail. Forward items to specific people with the relevant context attached — they get what they need, and the item moves to your "Waiting" queue so you remember to follow up.
 
 ## Smarter Drafting
 

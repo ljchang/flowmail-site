@@ -20,6 +20,7 @@ const sidebars: SidebarsConfig = {
         'features/email-triage',
         'features/cards',
         'features/focus-queue',
+        'features/plans',
         'features/ai-drafting',
         'features/memory',
         'features/people',

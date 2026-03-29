@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   mirror:
@@ -95,6 +96,6 @@ jobs:
 
       - name: Trigger GitHub Pages deploy
         env:
-          GH_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh workflow run deploy.yml --repo ljchang/flowmail-site
+          gh workflow run deploy.yml
