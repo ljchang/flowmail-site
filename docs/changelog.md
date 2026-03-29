@@ -9,6 +9,11 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.2 (2026-03-29)
+
+- Fix: remove card_notes from feature-gated benchmark DraftContext
+
+
 ## v0.2.0 (2026-03-29)
 
 - Update Cargo.lock
