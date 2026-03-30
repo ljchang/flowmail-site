@@ -9,6 +9,11 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.6 (2026-03-30)
+
+- Centralize PendingApproval guard in execute_plan, fix review issues
+
+
 ## v0.2.5 (2026-03-30)
 
 - Add Escape key to close dismiss feedback panel
