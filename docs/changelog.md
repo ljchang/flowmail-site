@@ -9,6 +9,16 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.5 (2026-03-30)
+
+- Add Escape key to close dismiss feedback panel
+- Add rendered prompt viewing to PlanDetailPanel
+- Reorganize PlanDetailPanel: collapsible Compute and Feedback sections
+- Add plan approval gate: PendingApproval status, approve/reject commands, focus queue integration
+- Fix create_lightweight_plan: skip decompose when action is known, preserve placeholder in multi-step
+- Fix clippy too_many_arguments on update_node_kind
+
+
 ## v0.2.4 (2026-03-29)
 
 - Simplify: extract CorrectionContext helper, merge replan commands, fix snapshot/annotation bugs
