@@ -9,6 +9,20 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.7 (2026-03-30)
+
+- Simplify plan handlers: extract shared helpers, fix lock scope
+- Implement calendar and delegation plan node handlers
+- Fix Templates tab, missing prompts, add Node Catalog, simplify
+- Add tab bar to PlansPage with Node Catalog tab
+- Update kindLabels to include all 23 node kinds
+- Add NodeCatalogTab component for browsing plan node types
+- Add get_node_catalog and get_prompt_for_node_kind commands
+- Add getNodeCatalog and getPromptForNodeKind service functions
+- Add node kind catalog registry with all 23 node kinds
+- Fix triage shift+arrow selection bug, overhaul plan UI in Focus Queue
+
+
 ## v0.2.6 (2026-03-30)
 
 - Centralize PendingApproval guard in execute_plan, fix review issues
