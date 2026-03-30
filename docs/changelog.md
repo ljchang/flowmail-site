@@ -9,6 +9,12 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.8 (2026-03-30)
+
+- Fix plan canvas: menu overflow, node deletion, edge deletion, button styling, detail close
+- Fix clippy redundant closure warnings
+
+
 ## v0.2.7 (2026-03-30)
 
 - Simplify plan handlers: extract shared helpers, fix lock scope
