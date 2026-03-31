@@ -9,6 +9,12 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.9 (2026-03-31)
+
+- Fix 6 bugs: draft collapse, markdown preview, button order, cmd+k, nav order, sent tab
+- Fix memory leaks: cap trash concurrency, clean up focus queue listeners
+
+
 ## v0.2.8 (2026-03-30)
 
 - Fix plan canvas: menu overflow, node deletion, edge deletion, button styling, detail close
