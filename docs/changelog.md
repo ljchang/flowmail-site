@@ -9,6 +9,60 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.10 (2026-04-01)
+
+- Fix clippy warnings: needless borrows, transmute annotation, too_many_arguments
+- Merge branch 'main' of github.com:ljchang/flowmail
+- Simplify: deduplicate JSON extraction, consolidate locks, fix FK ordering
+- Fix review findings: resolve scored_fields default, cache test contexts
+- Merge knowledge-graph + add rumination module with replay scoring
+- Add rumination prompt template for diverse hypothesis generation
+- Fix review findings: assigned_by value, optional query_row, function rename
+- Remove 1,210 lines of dead contact/memory code
+- Add rumination DB migration and query layer
+- Add Rumination design spec for self-play classification improvement
+- Fix frontend components for Node object compatibility
+- Fix remaining dropped-table references across plan handlers, memory, and contact commands
+- Fix critical runtime bugs and code quality issues from review
+- Remove old People view and dead contact commands, replace with Knowledge nav
+- Update fact extraction and email sync to use knowledge graph
+- Rewrite context assembly to use knowledge graph for entity retrieval
+- Add Knowledge view replacing People and Memory nav items
+- Add node indexing functions to Tantivy search index
+- Add frontend knowledge service and store
+- Add Tauri commands for knowledge graph CRUD operations
+- Add NodeEmbeddingStore and format_node_for_embedding for knowledge graph nodes
+- Add graph traversal, health scoring, and node exclusion to graph.rs
+- Fix db::graph code review issues: Result types, SQL bugs, upsert semantics
+- Add graph module with Node/Edge types, CRUD, entity resolution, and search
+- Add V044 knowledge graph migration
+- Remove dead embeddings feature flag references
+- Make fastembed and sqlite-vec default dependencies
+- Add Knowledge Graph Foundation implementation plan
+- Scope spec to knowledge graph + gap detection + context enrichment
+- Add Knowledge-Aware Email Intelligence design spec
+- Fix review findings: regex statics, mutex batching, ask node mismatch, code dedup
+- Fix test failures: remove non-existent email_classifications ALTER, fix PlannedNode Default in test
+- Optimize local model inference: compact prompts, triage defaults, token budgets
+- Add user preference learning for approval patterns
+- Add debounced reflexions, triage progress events, cancellation support
+- Add TokenBudget calculator and FallbackChain provider wrapper
+- Add static/dynamic prompt split for Anthropic prompt caching
+- Add ask node input widgets, confidence indicators, partial re-plan button
+- Add handle_ask handler for interactive checkpoint nodes
+- Add partial re-planning: preserve completed nodes, regenerate remaining steps
+- Add confidence-gated execution and mid-execution re-analysis in plan executor
+- Add semantic output keys, conditional execution, and expandable node decomposition
+- Add email sanitization, injection defense, classification validation, prompt hash tracking
+- Add injection defense to triage prompt, enrich planning reflexion context
+- Rewrite plan_generator prompt: two-phase analysis, operations table, few-shot patterns
+- Add plan validation and adaptive checkpoints from correction history
+- Add EmailAnalysis, NodeCondition types and extend PlannedNode/PlannerOutput
+- Add migration for AI system improvements: plan node extensions, preferences table
+- Add AI system improvements implementation plan (17 tasks, 7 groups)
+- Add AI system improvements design spec
+
+
 ## v0.2.9 (2026-03-31)
 
 - Fix 6 bugs: draft collapse, markdown preview, button order, cmd+k, nav order, sent tab
