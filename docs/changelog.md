@@ -9,6 +9,11 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.11 (2026-04-01)
+
+- Fix startup crash: V045 migration FK violation on upgrade
+
+
 ## v0.2.10 (2026-04-01)
 
 - Fix clippy warnings: needless borrows, transmute annotation, too_many_arguments
