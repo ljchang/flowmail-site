@@ -9,6 +9,12 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.16 (2026-04-02)
+
+- Fix 7 UI bugs: calendar sync, settings, plans, inspector, multi-select, reply-all, CC/BCC
+- Add web_research plan node with pluggable search providers
+
+
 ## v0.2.15 (2026-04-02)
 
 - Revert version to 0.2.14 after accidental minor bump
