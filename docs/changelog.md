@@ -9,6 +9,11 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.13 (2026-04-02)
+
+- Rewrite Knowledge tab: notes-app UX, graph viz, inline editing
+
+
 ## v0.2.12 (2026-04-01)
 
 - Fix V045 migration crash: disable FK during migrations, add regression test
