@@ -9,6 +9,24 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.14 (2026-04-02)
+
+- Merge branch 'wire-planning-features'
+- Fix 5 Knowledge tab bugs: inbox buttons, graph filtering, type change, panel collapse, shared_card edges
+- Simplify: parallel refreshes, optimistic deletion, remove noise
+- Fix drag listener leak and modal state reset
+- Add meta-improvement button and calendar event plan follow-up
+- Add plan templates tab and save-as-template modal
+- Add scheduled triggers tab and create trigger modal
+- Add CreatePlanModal for plans from instruction
+- Add plan analysis display and node card metadata badges
+- Rewire PlansPage: floating inspector, partial replan, 4-tab structure
+- Add NodeInspector floating panel component
+- Add analysis field to Plan sites, add 5 missing service wrappers
+- Switch plan queries to named columns, add V043 fields
+- Add V043 columns to PlanNode and Plan structs
+
+
 ## v0.2.13 (2026-04-02)
 
 - Rewrite Knowledge tab: notes-app UX, graph viz, inline editing
