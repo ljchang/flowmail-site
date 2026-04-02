@@ -9,6 +9,12 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.3.0 (2026-04-02)
+
+- Add Calendar tab with bi-directional sync, three views, and card/plan integration
+- Fix entity type persistence, fact candidate FK error, and add entity classification
+
+
 ## v0.2.14 (2026-04-02)
 
 - Merge branch 'wire-planning-features'
