@@ -9,6 +9,13 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.18 (2026-04-03)
+
+- Switch to upstream mistralrs v0.8.0, add Gemma 4 and Qwen 3.5 models
+- Fix agent integration: classification parsing, cloud fallback, plan constraints, ask_user flow
+- Fix all clippy warnings for CI
+
+
 ## v0.2.17 (2026-04-03)
 
 - Add agent command line spec, plan, and lockfile update
