@@ -9,6 +9,12 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.20 (2026-04-03)
+
+- Add tool-use support to EmbeddedProvider for local agent inference
+- Rename vision flag to multimodal for clarity
+
+
 ## v0.2.19 (2026-04-03)
 
 - Fix Gemma 4 model loading: use multimodal builder
