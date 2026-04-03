@@ -9,6 +9,11 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.19 (2026-04-03)
+
+- Fix Gemma 4 model loading: use multimodal builder
+
+
 ## v0.2.18 (2026-04-03)
 
 - Switch to upstream mistralrs v0.8.0, add Gemma 4 and Qwen 3.5 models
