@@ -9,6 +9,31 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.17 (2026-04-03)
+
+- Add agent command line spec, plan, and lockfile update
+- Code review fixes: SQL injection, dedup approval handler, optimize permissions, cleanup
+- Enrich agent context with email body, thread, sender knowledge, and card instructions
+- Integrate LEAP learning system with agent corrections and reflexions
+- Wire semantic_search tool with embedding service for vector search
+- Wire draft_reply tool with LLM provider for actual draft generation
+- Add streaming text output to agent via Anthropic SSE API
+- Add agent approval items to Focus Queue page
+- Add progressive trust 'Always allow' options to agent approval prompts
+- Wire create_card, create_plan, and draft_reply tool implementations
+- Wire approval blocking with permission checks and approve/reject UI
+- Integrate agent transcript panel into Plans page
+- Add PlanTranscript component for agent execution display
+- Add agent mode to command palette with streaming response
+- Add agent store and service for frontend agent integration
+- Add Tauri commands for agent chat and permission management
+- Add agent loop runner with tool execution and context builder
+- Add tool registry with curated agent tools and JSON schemas
+- Add permission manager with progressive trust rules and DB migration
+- Add agent module with types and event definitions
+- Add complete_with_tools to LlmProvider trait for agent tool-use support
+
+
 ## v0.2.16 (2026-04-02)
 
 - Fix 7 UI bugs: calendar sync, settings, plans, inspector, multi-select, reply-all, CC/BCC
