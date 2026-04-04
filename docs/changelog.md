@@ -9,6 +9,20 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.23 (2026-04-04)
+
+- Migrate remaining 5 tools to unified registry, clean up dead handlers
+- Simplify: fix bugs and clean up from code review
+- Add unified focus queue query for task-based approval surface
+- Generate tasks from plan nodes requiring approval
+- Add source_type/source_id to tasks for unified approval surface
+- Migrate 28 tools to unified registry, clean up legacy fallbacks
+- Wire agent loop to unified tool registry with legacy fallback
+- Wire plan executor to unified tool registry with legacy fallback
+- Add unified tool module with Tool trait and initial implementations
+- Slim triage classification: 5 LLM fields, remove classify_email node, add read/action types
+
+
 ## v0.2.22 (2026-04-04)
 
 - Multi-intent triage classifier with structured plan handoff
