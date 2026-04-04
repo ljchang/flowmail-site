@@ -9,6 +9,12 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.22 (2026-04-04)
+
+- Multi-intent triage classifier with structured plan handoff
+- Fix get_pending_approval_plans missing analysis column, clarify Plans UI labels
+
+
 ## v0.2.21 (2026-04-04)
 
 - Fire-and-forget plan creation from Cmd+K agent dispatch
