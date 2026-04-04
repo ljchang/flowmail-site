@@ -28,6 +28,18 @@ const features = [
       'Context-aware responses that draw on your notes, relationships, and past interactions. Drafts that sound like you, not a chatbot.',
     icon: '\u270e',
   },
+  {
+    title: 'Calendar',
+    description:
+      'Bi-directional calendar sync with three views. Link events to your cards and let the AI plan follow-ups automatically.',
+    icon: '\u29d6',
+  },
+  {
+    title: 'AI Agent',
+    description:
+      'Natural language commands via Cmd+K. Search, draft, create plans, and manage your inbox \u2014 with progressive trust.',
+    icon: '\u2726',
+  },
 ];
 
 function Hero(): ReactNode {

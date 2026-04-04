@@ -5,7 +5,7 @@ title: Overview
 
 # FlowMail
 
-FlowMail is an AI-powered desktop email client for macOS that manages your inbox the way your brain actually works — not with folders and filters, but with context, memory, and learning.
+FlowMail is an AI-powered desktop email client for macOS that manages your inbox the way your brain actually works — not with folders and filters, but with context, knowledge, and learning.
 
 ## A different approach to email
 
@@ -25,9 +25,13 @@ When the AI makes a mistake (misclassifies an email, suggests the wrong priority
 
 The result is an email assistant that genuinely adapts to how you work, not one that needs constant manual tuning.
 
-## Social memory
+## Knowledge graph
 
-FlowMail remembers the people in your life and how you interact with them. It tracks relationships, communication preferences, and interaction history — building a rich understanding of your social connections over time. This means when you're drafting a reply, the AI knows the tone and level of formality that fits the relationship, what you've discussed before, and what matters in the current context.
+FlowMail builds a personal knowledge graph from your email — tracking people, organizations, projects, and facts. It understands your relationships, communication preferences, and interaction history. This means when you're drafting a reply, the AI knows the tone and level of formality that fits the relationship, what you've discussed before, and what matters in the current context.
+
+## Calendar and agent
+
+FlowMail includes a built-in calendar that syncs bi-directionally with your email provider, so scheduling decisions don't require switching apps. And with the AI agent accessible via `Cmd+K`, you can give natural language instructions — "draft a reply to Sarah about the budget" — and the agent builds and executes a plan on your behalf, with your approval at every sensitive step.
 
 ## Smart drafts
 

@@ -46,6 +46,7 @@ Track how FlowMail is improving with the Learning dashboard:
 - **Corrections log** — See every correction you've made and the AI's self-reflection for each one
 - **Learned rules** — Browse the rules FlowMail has extracted from your corrections
 - **Accuracy metrics** — Watch the AI's accuracy improve over time as it learns your preferences
+- **Components** — View the improvable component registry — the internal prompts and classifiers that FlowMail uses. Trigger L1 improvement plans to refine specific components based on accumulated feedback.
 
 ## Custom Rules
 
@@ -64,13 +65,21 @@ FlowMail learns separately for each type of AI task:
 - **Triage classification** — How to categorize and prioritize your emails
 - **Planning** — What actions to take and how to structure multi-step workflows
 - **Draft generation** — Your writing style, tone preferences, and communication habits
-- **Memory extraction** — What facts are worth remembering and how to phrase them
+- **Knowledge extraction** — What facts are worth remembering and how to phrase them
 
 A correction to email classification improves triage without affecting planning, and vice versa. Each domain has its own set of learned rules tuned to its specific purpose.
 
 ## Prompt Improvement
 
 Beyond learning rules, FlowMail can also improve its own internal prompt templates based on correction patterns. When the system notices consistent themes in your feedback, it refines the instructions it gives itself for future similar situations. This means the AI doesn't just learn *what* to do differently — it learns how to *think* about your emails differently.
+
+## Rumination
+
+In the background, FlowMail runs a self-play process called rumination. It generates diverse hypotheses about how to classify and handle emails, then scores them against your actual corrections. This helps the AI explore new classification strategies it might not discover from corrections alone — like a scientist running thought experiments to test its own assumptions.
+
+## Meta-Improvement
+
+The Learning page includes a meta-improvement button that triggers an L2 review — the system examines its own improvement process and looks for ways to make its learning more effective. This is the "improving the improvement" layer described in [Plan Levels](/docs/features/plans#plan-levels).
 
 ---
 
@@ -83,7 +92,7 @@ FlowMail's learning system draws on several AI research methodologies:
 
 - **Tiers 2 and 3 (Pattern Recognition and Rule Consolidation)** are based on **LEAP (Learning through Episodic Abstraction and Pattern recognition)** — an approach where concrete experiences are abstracted into general principles, then periodically consolidated to maintain a coherent and non-contradictory rule set.
 
-- **The Memory system** incorporates concepts from **CIPHER (Contextual Integration and Pattern-based Hierarchical Encoding for Retrieval)** — a framework for organizing extracted knowledge with confidence scoring, temporal relevance, and hierarchical relationships between facts.
+- **The Knowledge system** incorporates concepts from **CIPHER (Contextual Integration and Pattern-based Hierarchical Encoding for Retrieval)** — a framework for organizing extracted knowledge with confidence scoring, temporal relevance, and hierarchical relationships between facts.
 
 These methodologies are adapted and combined to create a learning system that is specifically optimized for the email management domain.
 

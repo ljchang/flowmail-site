@@ -11,225 +11,107 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 ## v0.2.21 (2026-04-04)
 
-- Dispatch: fire-and-forget plan creation from Cmd+K
-- Fix complete_with_tools retry, add system role, derive Default
-- Regenerate Cargo.lock (resolve merge conflicts)
-- Resolve Cargo.lock conflict after version bump
-- Fix Gemma 4 on M5/Metal 4: runtime Metal compilation + MoE fallback
+- Fire-and-forget plan creation from Cmd+K agent dispatch
+- Fix agent tool-use retry logic and system role handling
+- Fix Gemma 4 runtime on newer Apple Silicon chips with Metal compilation and MoE fallback
 
+## v0.2.20 (2026-04-04)
 
-## v0.2.20 (2026-04-03)
-
-- Add tool-use support to EmbeddedProvider for local agent inference
-- Rename vision flag to multimodal for clarity
-
+- Add tool-use support for local AI models, enabling agent inference without cloud API calls
+- Fix plan approval UI labels and missing analysis column
 
 ## v0.2.19 (2026-04-03)
 
-- Fix Gemma 4 model loading: use multimodal builder
-
+- Fix Gemma 4 model loading with multimodal builder
 
 ## v0.2.18 (2026-04-03)
 
-- Switch to upstream mistralrs v0.8.0, add Gemma 4 and Qwen 3.5 models
-- Fix agent integration: classification parsing, cloud fallback, plan constraints, ask_user flow
-- Fix all clippy warnings for CI
+- Add Gemma 4 and Qwen 3.5 model families for local inference
+- Switch to upstream mistralrs v0.8.0
 
+## v0.2.17 (2026-04-02)
 
-## v0.2.17 (2026-04-03)
+- **AI Agent system** — Give natural language instructions via `Cmd+K` and the agent builds and executes plans on your behalf
+- Multi-turn agent execution with a curated tool registry (search, draft, create plans, manage cards)
+- Progressive trust: "Always allow" standing permissions for approved tool types
+- Agent approval items appear in the Focus Queue for review before sensitive actions
+- Agent execution transcript visible in the Plans page
+- Streaming real-time output via SSE
+- Context enrichment: agent receives email body, thread history, sender knowledge, and card instructions
+- Automatic fallback from local to cloud LLM when needed
 
-- Add agent command line spec, plan, and lockfile update
-- Code review fixes: SQL injection, dedup approval handler, optimize permissions, cleanup
-- Enrich agent context with email body, thread, sender knowledge, and card instructions
-- Integrate LEAP learning system with agent corrections and reflexions
-- Wire semantic_search tool with embedding service for vector search
-- Wire draft_reply tool with LLM provider for actual draft generation
-- Add streaming text output to agent via Anthropic SSE API
-- Add agent approval items to Focus Queue page
-- Add progressive trust 'Always allow' options to agent approval prompts
-- Wire create_card, create_plan, and draft_reply tool implementations
-- Wire approval blocking with permission checks and approve/reject UI
-- Integrate agent transcript panel into Plans page
-- Add PlanTranscript component for agent execution display
-- Add agent mode to command palette with streaming response
-- Add agent store and service for frontend agent integration
-- Add Tauri commands for agent chat and permission management
-- Add agent loop runner with tool execution and context builder
-- Add tool registry with curated agent tools and JSON schemas
-- Add permission manager with progressive trust rules and DB migration
-- Add agent module with types and event definitions
-- Add complete_with_tools to LlmProvider trait for agent tool-use support
+## v0.2.16 (2026-04-01)
 
+- Add web research plan nodes for gathering external information during plan execution
+- Fix 7 UI bugs: calendar sync, settings panel, plans inspector, multi-select, reply-all, CC/BCC handling
 
-## v0.2.16 (2026-04-02)
+## v0.2.15 (2026-04-01)
 
-- Fix 7 UI bugs: calendar sync, settings, plans, inspector, multi-select, reply-all, CC/BCC
-- Add web_research plan node with pluggable search providers
+- **Calendar integration** — Bi-directional sync with Gmail and Outlook calendars
+- Three views: Month (with mini-calendar sidebar), Week (hour grid), and Agenda (list)
+- Quick-create events by clicking time slots
+- Card and plan integration: link events to cards, generate follow-up plans from events
 
+## v0.2.14 (2026-03-31)
 
-## v0.2.15 (2026-04-02)
+- **Plans page enhancements** — Floating NodeInspector panel, 4-tab structure (Plans, Templates, Triggers, Catalog)
+- Save completed plans as reusable templates with automatic template matching
+- Scheduled triggers for automated recurring plan generation
+- CreatePlanModal for building plans from natural language instructions
+- Partial replan: regenerate remaining steps with user feedback while preserving completed work
+- Plan analysis summaries in plan headers
+- Meta-improvement button for triggering L2 reviews
+- Calendar event plan follow-up
+- Fix 5 Knowledge tab bugs: inbox buttons, graph filtering, type change, panel collapse
 
-- Revert version to 0.2.14 after accidental minor bump
-- Add Calendar tab with bi-directional sync, three views, and card/plan integration
-- Fix entity type persistence, fact candidate FK error, and add entity classification
+## v0.2.13 (2026-03-31)
 
+- **Knowledge tab rewrite** — Notes-app style UX with graph visualization and inline editing
 
-## v0.3.0 (2026-04-02)
+## v0.2.12 (2026-03-31)
 
-- Add Calendar tab with bi-directional sync, three views, and card/plan integration
-- Fix entity type persistence, fact candidate FK error, and add entity classification
+- Fix migration crash: disable FK constraints during migration to prevent V045 FK violation on upgrade
 
+## v0.2.11 (2026-03-31)
 
-## v0.2.14 (2026-04-02)
+- Fix startup crash caused by V045 migration foreign key violation
 
-- Merge branch 'wire-planning-features'
-- Fix 5 Knowledge tab bugs: inbox buttons, graph filtering, type change, panel collapse, shared_card edges
-- Simplify: parallel refreshes, optimistic deletion, remove noise
-- Fix drag listener leak and modal state reset
-- Add meta-improvement button and calendar event plan follow-up
-- Add plan templates tab and save-as-template modal
-- Add scheduled triggers tab and create trigger modal
-- Add CreatePlanModal for plans from instruction
-- Add plan analysis display and node card metadata badges
-- Rewire PlansPage: floating inspector, partial replan, 4-tab structure
-- Add NodeInspector floating panel component
-- Add analysis field to Plan sites, add 5 missing service wrappers
-- Switch plan queries to named columns, add V043 fields
-- Add V043 columns to PlanNode and Plan structs
+## v0.2.10 (2026-03-30)
 
-
-## v0.2.13 (2026-04-02)
-
-- Rewrite Knowledge tab: notes-app UX, graph viz, inline editing
-
-
-## v0.2.12 (2026-04-01)
-
-- Fix V045 migration crash: disable FK during migrations, add regression test
-
-
-## v0.2.11 (2026-04-01)
-
-- Fix startup crash: V045 migration FK violation on upgrade
-
-
-## v0.2.10 (2026-04-01)
-
-- Fix clippy warnings: needless borrows, transmute annotation, too_many_arguments
-- Merge branch 'main' of github.com:ljchang/flowmail
-- Simplify: deduplicate JSON extraction, consolidate locks, fix FK ordering
-- Fix review findings: resolve scored_fields default, cache test contexts
-- Merge knowledge-graph + add rumination module with replay scoring
-- Add rumination prompt template for diverse hypothesis generation
-- Fix review findings: assigned_by value, optional query_row, function rename
+- **Knowledge graph** — New unified system replacing the old Memory and People views
+- Entity types: person, organization, project, concept, fact
+- Interactive graph visualization with node types and edge relationships
+- Health scoring (confidence, recency, access frequency) for all entities
+- Vector embeddings and semantic search across your knowledge base
+- Entity inbox for reviewing automatically extracted entities before saving
+- Connection panels showing how entities relate to each other
+- **Rumination system** — Background self-play process that generates diverse classification hypotheses to improve AI accuracy
 - Remove 1,210 lines of dead contact/memory code
-- Add rumination DB migration and query layer
-- Add Rumination design spec for self-play classification improvement
-- Fix frontend components for Node object compatibility
-- Fix remaining dropped-table references across plan handlers, memory, and contact commands
-- Fix critical runtime bugs and code quality issues from review
-- Remove old People view and dead contact commands, replace with Knowledge nav
-- Update fact extraction and email sync to use knowledge graph
-- Rewrite context assembly to use knowledge graph for entity retrieval
-- Add Knowledge view replacing People and Memory nav items
-- Add node indexing functions to Tantivy search index
-- Add frontend knowledge service and store
-- Add Tauri commands for knowledge graph CRUD operations
-- Add NodeEmbeddingStore and format_node_for_embedding for knowledge graph nodes
-- Add graph traversal, health scoring, and node exclusion to graph.rs
-- Fix db::graph code review issues: Result types, SQL bugs, upsert semantics
-- Add graph module with Node/Edge types, CRUD, entity resolution, and search
-- Add V044 knowledge graph migration
-- Remove dead embeddings feature flag references
-- Make fastembed and sqlite-vec default dependencies
-- Add Knowledge Graph Foundation implementation plan
-- Scope spec to knowledge graph + gap detection + context enrichment
-- Add Knowledge-Aware Email Intelligence design spec
-- Fix review findings: regex statics, mutex batching, ask node mismatch, code dedup
-- Fix test failures: remove non-existent email_classifications ALTER, fix PlannedNode Default in test
-- Optimize local model inference: compact prompts, triage defaults, token budgets
-- Add user preference learning for approval patterns
-- Add debounced reflexions, triage progress events, cancellation support
-- Add TokenBudget calculator and FallbackChain provider wrapper
-- Add static/dynamic prompt split for Anthropic prompt caching
-- Add ask node input widgets, confidence indicators, partial re-plan button
-- Add handle_ask handler for interactive checkpoint nodes
-- Add partial re-planning: preserve completed nodes, regenerate remaining steps
-- Add confidence-gated execution and mid-execution re-analysis in plan executor
-- Add semantic output keys, conditional execution, and expandable node decomposition
-- Add email sanitization, injection defense, classification validation, prompt hash tracking
-- Add injection defense to triage prompt, enrich planning reflexion context
-- Rewrite plan_generator prompt: two-phase analysis, operations table, few-shot patterns
-- Add plan validation and adaptive checkpoints from correction history
-- Add EmailAnalysis, NodeCondition types and extend PlannedNode/PlannerOutput
-- Add migration for AI system improvements: plan node extensions, preferences table
-- Add AI system improvements implementation plan (17 tasks, 7 groups)
-- Add AI system improvements design spec
 
+## v0.2.9 (2026-03-30)
 
-## v0.2.9 (2026-03-31)
-
-- Fix 6 bugs: draft collapse, markdown preview, button order, cmd+k, nav order, sent tab
-- Fix memory leaks: cap trash concurrency, clean up focus queue listeners
-
+- Fix memory leaks, draft collapse, markdown preview, Cmd+K behavior, navigation order, and sent tab display
 
 ## v0.2.8 (2026-03-30)
 
-- Fix plan canvas: menu overflow, node deletion, edge deletion, button styling, detail close
-- Fix clippy redundant closure warnings
-
+- Fix plan canvas: menu overflow, node/edge deletion, button styling
 
 ## v0.2.7 (2026-03-30)
 
-- Simplify plan handlers: extract shared helpers, fix lock scope
-- Implement calendar and delegation plan node handlers
-- Fix Templates tab, missing prompts, add Node Catalog, simplify
-- Add tab bar to PlansPage with Node Catalog tab
-- Update kindLabels to include all 23 node kinds
-- Add NodeCatalogTab component for browsing plan node types
-- Add get_node_catalog and get_prompt_for_node_kind commands
-- Add getNodeCatalog and getPromptForNodeKind service functions
-- Add node kind catalog registry with all 23 node kinds
-- Fix triage shift+arrow selection bug, overhaul plan UI in Focus Queue
-
+- Add node kind catalog with 23 node types
+- Add calendar and delegation plan handlers
 
 ## v0.2.6 (2026-03-30)
 
-- Centralize PendingApproval guard in execute_plan, fix review issues
-
+- Improve plan approval gate behavior
 
 ## v0.2.5 (2026-03-30)
 
-- Add Escape key to close dismiss feedback panel
-- Add rendered prompt viewing to PlanDetailPanel
-- Reorganize PlanDetailPanel: collapsible Compute and Feedback sections
-- Add plan approval gate: PendingApproval status, approve/reject commands, focus queue integration
-- Fix create_lightweight_plan: skip decompose when action is known, preserve placeholder in multi-step
-- Fix clippy too_many_arguments on update_node_kind
-
+- Add plan approval gate: PendingApproval status with rendered prompt viewing
 
 ## v0.2.4 (2026-03-29)
 
-- Simplify: extract CorrectionContext helper, merge replan commands, fix snapshot/annotation bugs
-- Fix frontend/backend parameter mismatches: updateNodeKind, skipPlanNode, replan node_id
-- Add correction-derived benchmark cases query and command
-- Add DAG-level re-plan feedback bar to PlanDAGCanvas
-- Add DAG node annotations: kind editing, annotation textarea, skip button in PlanDetailPanel
-- Replace dismiss dropdown with feedback panel in TaskInputWidget
-- Add plan feedback backend commands: replan, node annotations, skip
-- Pass user_feedback through planning reflexion pipeline
-- Add plan feedback DB schema: correction snapshots, node annotations, query helpers
-- Add .worktrees/ to gitignore
-- Add plan cancel/retry actions and fix Plans layout
-- Simplify benchmarks: merge error constructors, hoist prompt load, rename cmd, remove unused import
-- Add learning benchmark UI: A/B comparison, snapshots display, domain selector
-- Add learning benchmark: A/B runner, snapshots storage, get_learning_snapshots
-- Add learning benchmark schema: snapshots table, learning_variant field
-- Add implementation plan: benchmark Phase 4 - learning A/B benchmarks
-- Add pipeline task type to benchmark UI
-- Add pipeline benchmark: run_pipeline_test, score_pipeline, end-to-end orchestration
-- Fix clippy too_many_arguments on create_lightweight_plan
-- Add pipeline benchmark fields: action_surfaced, urgency_band, card_assignment, node_count, llm_calls
+- Add plan feedback system: correction snapshots, node annotations, partial replan feedback, DAG-level feedback bar
 
 
 ## v0.2.3 (2026-03-29)

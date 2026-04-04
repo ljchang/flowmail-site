@@ -54,12 +54,20 @@ FlowMail's intelligent features — email classification, planning, smart drafti
 
 ### Local models (recommended)
 
-We recommend using local open weight models by default so that your information never leaves your computer. FlowMail includes built-in support for running models directly on your Mac — no API key or account needed.
+We recommend using local open weight models by default so that your information never leaves your computer. FlowMail includes built-in support for running models directly on your Mac using Metal GPU acceleration — no API key or account needed.
+
+FlowMail uses a three-tier model system, each optimized for different tasks:
+
+- **Fast** (4B parameters) — Used for quick tasks like email triage and classification.
+- **Standard** (8B parameters) — Used for triage, task extraction, and general generation.
+- **Deep** (32B parameters) — Used for complex planning, drafting, and multi-step reasoning.
+
+Supported model families include Qwen 3, Qwen 3.5, Gemma 3, and Gemma 4.
 
 1. Open **Settings** and navigate to the **Models** section.
-2. Select a local model. FlowMail will download it automatically on first use.
+2. Select a local model for each tier. FlowMail will download it automatically on first use.
 
-Local models run entirely on your device using Apple Silicon acceleration. Your email content is never sent to any external service.
+Local models run entirely on your device using Apple Silicon (Metal) acceleration. Your email content is never sent to any external service.
 
 ### Cloud AI providers (optional)
 

@@ -49,6 +49,12 @@ When you dismiss an item, FlowMail asks why:
 
 This feedback is recorded as a plan correction and feeds directly into FlowMail's [learning system](/docs/features/learning), so the AI gets better at extracting the right actions over time.
 
+## Agent Approval Items
+
+When the [AI agent](/docs/features/agent) needs your sign-off on a sensitive action — like sending an email or creating a plan — it creates an approval item in the Focus Queue. You see exactly what the agent wants to do and can approve, reject, or modify the action before it proceeds.
+
+Approval items work just like other Focus Queue tasks: they're prioritized, linked to the originating plan, and feed into the learning system when you provide feedback.
+
 ## Quick-Add
 
 Need to add a task manually? The quick-add widget lets you create items on the fly without leaving the Focus Queue. Each one becomes a lightweight plan that fits right into the same priority system as everything else.
