@@ -9,6 +9,15 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.21 (2026-04-04)
+
+- Dispatch: fire-and-forget plan creation from Cmd+K
+- Fix complete_with_tools retry, add system role, derive Default
+- Regenerate Cargo.lock (resolve merge conflicts)
+- Resolve Cargo.lock conflict after version bump
+- Fix Gemma 4 on M5/Metal 4: runtime Metal compilation + MoE fallback
+
+
 ## v0.2.20 (2026-04-03)
 
 - Add tool-use support to EmbeddedProvider for local agent inference
