@@ -9,6 +9,54 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.25 (2026-04-05)
+
+- Fix event data parsing bug in SelfReflectionTab, remove unused var
+- Wire self-reflection auto-trigger, add Self-Reflection tab to Learning page
+- Add agent session plan linking implementation plan
+- Simplify: batch positive signals, fix fail-open guard, remove dead code, fix stringly-typed domain
+- Merge feature/self-reflection-sessions: personality-driven self-reflection with restricted toolset
+- Add self-reflection session trigger with personality-scaled threshold
+- Add self-reflection tools: trigger_l1, propose/retire LEAP rules, report
+- Add self-reflection prompt template with personality context
+- Add V058 migration: reviewed_at column for self-reflection tracking
+- Merge feature/positive-signals-auto-l1: positive signal tracking, regression detection, auto L1 triggering
+- Record triage positive signals on sync, auto-trigger L1 on degradation
+- Record positive signals for draft acceptance and plan completion
+- Add signals module for positive signal recording and regression detection
+- Add success tracking fields and query functions for positive signals
+- Add V057 migration: success_count for positive signal tracking
+- Make L1 apply_component auto-execute (no approval checkpoint)
+- Add Phase C implementation plan: self-reflection sessions
+- Add Phase B implementation plan: positive signals and auto L1 triggering
+- Merge feature/unified-learning-pipeline: unify 6 feedback domains to 3, personality-aware agent reflexions
+- Remove dead PlanReflexionInput, replace with lean PlanCorrectionCtx
+- Simplify: extract memory context helper, fix stringly-typed domain, update dead match arms
+- Remove old reflexion templates, keep triage + agent only
+- Reroute task and memory corrections to agent reflexion domain
+- Reroute plan corrections to agent reflexion domain
+- Enrich agent tool rejection with email/card/tool context
+- Add spawn_agent_reflexion with personality-aware LLM reflexion generation
+- Add AgentReflexionInput and build_agent_reflexion_prompts
+- Add reflexion_agent.toml prompt template with personality context
+- Simplify FeedbackDomain: 6 variants to 3 (Triage, Draft, Agent)
+- Add V056 migration: consolidate feedback domains to agent
+- Add Phase A implementation plan: unified learning pipeline foundation
+- Add unified learning pipeline design spec
+- Fix Agent tab: session→transcript, plan→DAG, add New Session button
+- Simplify: extract autoGrow util, use shared Button, remove comment noise
+- Add Personality tab to Settings page
+- Add CommunicationSection component with tone, sliders, and text fields
+- Add IdentitySection component with auto-growing text areas
+- Add DrivesSection component with labeled personality sliders
+- Add personalityStore for frontend personality state management
+- Wire autonomy and self_improvement_urgency drives to thresholds
+- Inject personality config into agent system prompt
+- Add PersonalityConfig struct and prompt renderer
+- Add Phase 1 implementation plan for agent personality system
+- Add agent personality system design spec
+
+
 ## v0.2.24 (2026-04-05)
 
 - Simplify: fix session flash bug, extract selectedSession derived
