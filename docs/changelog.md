@@ -9,6 +9,13 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.27 (2026-04-05)
+
+- Add agent drawer panel accessible from any view via Cmd+J
+- Rename Planning → Agent in Learning tab to match backend domain migration
+- Fix 8 UI issues: session delete, calendar recurring events, agent error recovery
+
+
 ## v0.2.26 (2026-04-05)
 
 - Cache filtered tools instead of rebuilding on every agent loop iteration
