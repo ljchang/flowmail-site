@@ -9,6 +9,30 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.24 (2026-04-05)
+
+- Simplify: fix session flash bug, extract selectedSession derived
+- Wire AgentTranscript into session detail view alongside plan DAG
+- Add AgentTranscript component for historical session event display
+- Make session rows clickable, load linked plan into DAG view
+- Simplify: fix UUID ordering bug, add plans.agent_session_id index, remove dead list_sessions
+- Show linked plan info in agent session list
+- Triage wraps plan generation in agent sessions
+- CreatePlanTool links plan to session and auto-executes
+- Simplify: fix service import, card_id nullability, extract finalize_session helper, clean up stubs
+- Dispatch creates agent session instead of plan, navigates to Agent tab
+- Add agent session list to Agent tab
+- Rename Plans tab to Agent across sidebar, command palette, and page header
+- Add frontend service functions for agent session queries
+- Add Tauri commands for querying agent sessions and events
+- Persist agent events to DB during agent loop execution
+- Add agent session and event query functions with tests
+- Add agent_sessions and agent_events tables (migration V054)
+- Add Phase 1 implementation plan: agent session persistence
+- Update spec: agent sessions as primary unit, Plans tab → Agent tab, dispatch integration
+- Add agent-orchestrated execution design spec (3 phases)
+
+
 ## v0.2.23 (2026-04-04)
 
 - Migrate remaining 5 tools to unified registry, clean up dead handlers
