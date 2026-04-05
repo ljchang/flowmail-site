@@ -9,6 +9,20 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.26 (2026-04-05)
+
+- Cache filtered tools instead of rebuilding on every agent loop iteration
+- Handle model_switched event in agentStore
+- Render model_switched events in agent transcript
+- Implement model switching in agent loop (think_deeper/think_faster)
+- Add think_deeper and think_faster tool definitions
+- Add ModelSwitched event variant for agent model switching
+- Add agent model switching implementation plan
+- Add agent model switching (think_deeper/think_faster) design spec
+- Add agent session transcript interactivity, event persistence, and tool state notifications
+- Show SR badge for self-reflection sessions in Plans page
+
+
 ## v0.2.25 (2026-04-05)
 
 - Fix event data parsing bug in SelfReflectionTab, remove unused var
