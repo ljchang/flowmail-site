@@ -9,6 +9,11 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.33 (2026-05-23)
+
+- Pin fastembed to =5.13.0 to keep candle-core 0.9 consistent
+
+
 ## v0.2.30 (2026-05-23)
 
 - Force outlook_oauth_config to discard any client_secret
