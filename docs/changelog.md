@@ -9,6 +9,12 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.30 (2026-05-23)
+
+- Force outlook_oauth_config to discard any client_secret
+- Fix clippy::explicit_counter_loop in research pipeline
+
+
 ## v0.2.29 (2026-05-23)
 
 - Fix Microsoft 365 OAuth admin-consent loop, public-client mismatch, and /me dependency
