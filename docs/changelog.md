@@ -9,6 +9,11 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.29 (2026-05-23)
+
+- Fix Microsoft 365 OAuth admin-consent loop, public-client mismatch, and /me dependency
+
+
 ## v0.2.28 (2026-04-06)
 
 - Overlap calendar events with transparency, move agent button to top bar, filter sent emails from triage
