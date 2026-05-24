@@ -9,6 +9,11 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.34 (2026-05-24)
+
+- Track mistralrs master + candle 0.10; add Qwen 3.6 27B
+
+
 ## v0.2.33 (2026-05-23)
 
 - Pin fastembed to =5.13.0 to keep candle-core 0.9 consistent
