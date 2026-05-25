@@ -9,6 +9,13 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.35 (2026-05-25)
+
+- Sync Cargo.lock with 0.2.34 package version
+- Make OAuth sync errors actionable instead of generic
+- Patch mistralrs to fix precompile=0 runtime kernel registration
+
+
 ## v0.2.34 (2026-05-24)
 
 - Track mistralrs master + candle 0.10; add Qwen 3.6 27B
