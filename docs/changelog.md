@@ -9,6 +9,16 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.36 (2026-05-26)
+
+- Fix classify_llm_error to surface timeouts and Metal compile failures
+- Cap Qwen 3.6 27B AFQ4 to triage/generation tasks (not agent)
+- Update mistralrs pin to include GDN bfloat16_t typedef
+- Fix Qwen 3.6 manifest reload + clean up orphan model IDs
+- Pivot Qwen 3.6 from FP8 repo to BF16 + AFQ4 ISQ (FP8 layout unsupported)
+- Add HF safetensors load path for Qwen 3.6 27B FP8
+
+
 ## v0.2.35 (2026-05-25)
 
 - Sync Cargo.lock with 0.2.34 package version
