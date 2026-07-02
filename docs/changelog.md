@@ -9,6 +9,12 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.38 (2026-07-02)
+
+- Outlook incremental sync via Microsoft Graph delta queries
+- Refresh-and-retry provider actions on 401; scope triage error banner to load failures
+
+
 ## v0.2.37 (2026-07-02)
 
 - Acquire Tantivy IndexWriter lazily so a second instance can't panic startup
