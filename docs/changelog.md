@@ -9,6 +9,15 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.37 (2026-07-02)
+
+- Acquire Tantivy IndexWriter lazily so a second instance can't panic startup
+- Third tranche of code-review fixes: AI trait and DB module structure
+- Second tranche of code-review fixes: retries, deltas, and refactors
+- Implement code-review fixes: security, performance, and UI hardening
+- Bump mistralrs to master (15986c03) + pin Gemma UQFF revisions
+
+
 ## v0.2.36 (2026-05-26)
 
 - Fix classify_llm_error to surface timeouts and Metal compile failures
