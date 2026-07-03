@@ -9,6 +9,70 @@ Release notes for FlowMail. Updates are delivered automatically through the app.
 
 <!-- RELEASES -->
 
+## v0.2.39 (2026-07-03)
+
+- Merge remote-tracking branch 'origin/main' into unified-composer
+- Clear AI classification on Not-spam so restored mail re-triages
+- Add Blocked Senders settings tab
+- EmailPreview: address/domain block choice on Spam + Not-spam action
+- Show a single toast when restoring from spam
+- Wire spam block scope + undo and add markEmailAsNotSpam to emailStore
+- Add blocklist service wrappers and blockedSendersStore
+- Add blocklist management commands (get/add/remove sender block)
+- Add mark_email_as_not_spam: restore, un-block, and move back to inbox
+- Add provider mark_as_not_spam (Gmail + Outlook)
+- Log (not swallow) spam correction-write failures
+- Block sender, sweep, and record a spam correction on mark-as-spam
+- Sweep existing mail from a sender to spam on block
+- Short-circuit blocked senders to spam before LLM classification
+- Add sender_blocks table and blocklist query module
+- Add spam system implementation plan
+- Fix Gmail incremental sync: send historyTypes as repeated params
+- Keep reply editor typeable during generation; reply to a chosen thread message
+- Sign dev builds with stable Developer ID to stop repeated Keychain prompts
+- Add spam system design spec
+- Quote the original message below replies
+- Add reply quoting design spec
+- Reject control chars in reply Message-ID to prevent email header injection
+- Backfill message_id on email upsert; assert reply-header placement
+- Pass source Message-ID as in_reply_to when sending a reply
+- Thread in_reply_to through send path; set Gmail and Outlook reply headers
+- Capture RFC Message-ID on email ingest for both providers
+- Add Phase 3 reply threading implementation plan
+- Add reply threading correctness design spec
+- Add global r/a/f/c compose shortcuts to triage preview
+- Fix rewrite fence-stripping, toolbar Escape-dismiss, and replace/undo hardening from Phase 2 review
+- Add inline AI-improve selection toolbar wired to rewrite_selection
+- Expose selection read and undoable replace on MilkdownEditor
+- Add rewrite_selection command for inline AI text rewriting
+- Add Phase 2-improve inline AI-improve implementation plan
+- Add inline AI-improve + global compose shortcuts design spec
+- Replace Composer textarea/preview with markdown-native WYSIWYG editor
+- Add MilkdownEditor: markdown-native WYSIWYG wrapper around Crepe
+- Add Phase 1b WYSIWYG editor implementation plan
+- Fix compose-new selection, generateDraft session race, and composer keydown propagation from Phase 1a review
+- Render new-email Composer in ComposeView when no email is selected
+- Add reply-in-place composer to the triage preview
+- Add Cmd/Ctrl+Enter to send and Escape to close in Composer
+- Auto-generate a reply draft on composer open when none is restored
+- Add Phase 1a reply-in-place implementation plan
+- Broaden no-AI-attribution rule to cover PR bodies and all git artifacts
+- Fix draft-reload, ForwardModal effect guard, and forward-modal UX regressions from final review
+- Remove superseded draft/compose components after unification
+- Host Composer inside ForwardModal for forwards
+- Render Composer for new email in Focus Queue
+- Render Composer for replies in ComposeView
+- Add unified Composer component (reply/new/forward)
+- Add mode-dispatched send to composerStore
+- Add debounced autosave to composerStore
+- Add guard-failure and forward-mode tests for composerStore generation
+- Add draft generation to composerStore
+- Add composerStore session state and mode seeding
+- Add Vitest + testing-library frontend test harness
+- Add unified composer Phase 0 implementation plan
+- Add unified WYSIWYG composer design spec
+
+
 ## v0.2.38 (2026-07-02)
 
 - Outlook incremental sync via Microsoft Graph delta queries
